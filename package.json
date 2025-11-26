@@ -1,0 +1,11 @@
+{
+  "name": "heavenlyai",
+  "version": "1.0.0",
+  "type": "module",
+  "dependencies": {
+    "@google/generative-ai": "^0.12.0"
+  },
+  "scripts": {
+    "dev": "vercel dev"
+  }
+}
