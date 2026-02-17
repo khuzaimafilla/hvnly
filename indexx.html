@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>heavenly.food - under maintenance</title>
+  <link rel="icon" href="images/logo.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --green: #2e8b4f;
+      --green-light: #6fd595;
+      --bg: #fbfdfc;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: "Montserrat", sans-serif;
+      background: linear-gradient(180deg, #fbfff9 0%, #ffffff 100%);
+      color: #333;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .maintenance-wrap {
+      padding: 20px;
+      max-width: 500px;
+      animation: fadeIn 0.8s ease-out;
+    }
+
+    .logo {
+      width: 100px;
+      height: auto;
+      margin-bottom: 24px;
+      filter: drop-shadow(0 4px 10px rgba(46, 139, 79, 0.2));
+      animation: pulse 2s infinite ease-in-out;
+    }
+
+    h1 {
+      font-size: 1.8rem;
+      color: var(--green);
+      margin-bottom: 12px;
+      font-weight: 800;
+    }
+
+    p {
+      color: #666;
+      line-height: 1.6;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 24px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      background: linear-gradient(90deg, var(--green), var(--green-light));
+      color: #fff;
+      box-shadow: 0 8px 20px rgba(46, 139, 79, 0.2);
+    }
+
+    .btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 25px rgba(46, 139, 79, 0.3);
+    }
+
+    .social-links {
+      margin-top: 40px;
+      font-size: 0.9rem;
+      color: #999;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+    }
+
+    /* Background dekorasi simpel */
+    .circle {
+      position: absolute;
+      background: var(--green);
+      border-radius: 50%;
+      opacity: 0.03;
+      z-index: -1;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="circle" style="width: 300px; height: 300px; top: -100px; right: -100px;"></div>
+  <div class="circle" style="width: 200px; height: 200px; bottom: -50px; left: -50px;"></div>
+
+  <div class="maintenance-wrap">
+    <img src="images/logo.png" alt="Heavenly Logo" class="logo">
+    <h1>Dapur Kami Sedang Berbenah</h1>
+    <p>
+      Halo Teman-teman Heavenly Food!, Kami sedang melakukan perbaikan untuk meningkatkan kualitas menu dan layanan kami agar lebih baik lagi kedepannya. Kami akan segera kembali...
+    </p>
+    
+    <a href="https://wa.me/6282132517964" class="btn">Hubungi Kami via WhatsApp</a>
+
+    <div class="social-links">
+      Nantikan update kami di instagarm: <strong>@heavenly.fd</strong>
+    </div>
+  </div>
+
+</body>
+</html>
