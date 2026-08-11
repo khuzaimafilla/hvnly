@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Admin Dashboard & Order Verifier — Heavenly Food</title>
+  
+  <link rel="icon" href="public/images/logo.png" type="image/png" sizes="32x32" />
+  <link rel="apple-touch-icon" href="public/images/logo.png" sizes="180x180" />
+  <link rel="manifest" href="manifest.json" />
+  <meta name="theme-color" content="#10b981" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="src/css/main.css" />
+  <link rel="stylesheet" href="src/css/customer.css" />
+  <link rel="stylesheet" href="src/css/admin.css" />
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function() {
+        navigator.serviceWorker.register('./sw.js').catch(function(err) {
+          console.warn('ServiceWorker registration failed:', err);
+        });
+      });
+    }
+  </script>
+</head>
+<body>
+
+  <!-- PASSKEY AUTHENTICATION MODAL -->
+  <div id="passkey-modal" class="passkey-modal">
+    <div class="passkey-card">
+      <img src="public/images/logo.png" alt="Heavenly Admin" style="height:56px; margin-bottom:16px;" />
+      <h2 style="font-size:1.35rem; font-weight:700; color:var(--text-dark); margin-bottom:6px;">Admin Verifier Passkey</h2>
+      <p style="font-size:0.88rem; color:var(--text-muted); line-height:1.5;">Masukkan kata sandi admin untuk mengakses dasbor verifikasi pesanan.</p>
+      
+      <input type="password" id="passkey-input" placeholder="••••••••" autofocus />
+      <button id="passkey-submit" class="btn primary" style="width:100%;">Masuk Dasbor Admin</button>
+    </div>
+  </div>
+
+  <!-- ADMIN HEADER NAVBAR -->
+  <header class="nav-fixed">
+    <nav class="nav container">
+      <a class="brand" href="index.html" style="display:flex; align-items:center; gap:12px; text-decoration:none;">
+        <img src="public/images/logo.png" alt="Heavenly Logo" class="brand-mark" style="height:40px;" />
+        <div style="display:flex; flex-direction:column;">
+          <span style="font-size:0.72rem; font-weight:600; color:var(--emerald-600); letter-spacing:0.06em; text-transform:uppercase;">Admin Verifier</span>
+        </div>
+      </a>
+
+      <div class="nav-actions">
+        <a href="index.html" class="btn ghost" style="font-size:0.88rem; padding:8px 18px;">Web Customer</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- MAIN VERIFIER CONTENT -->
+  <main class="admin-container">
+    <h1 class="section-title">Verifikasi Tiket Pembayaran</h1>
+    <p class="section-subtitle">Status lunas dan keaslian transaksi diverifikasi via enkripsi kriptografi tanpa database</p>
+
+    <div id="verifier-container">
+      <!-- Rendered dynamically by verifier.js -->
+    </div>
+  </main>
+
+  <script src="src/js/admin/bundle.js?v=4"></script>
+</body>
+</html>

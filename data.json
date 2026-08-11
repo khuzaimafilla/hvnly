@@ -9,7 +9,8 @@
       "description": "Ayam bakar khas dengan bumbu manis-gurih, empuk dan juicy.",
       "short": "Nasi + Ayam Saus Teriyaki + Telur.",
       "price": 12000,
-      "image": "images/menu/teriyaki.png"
+      "image": "images/menu/teriyaki.png",
+      "category": "Rice Bowl"
     },
     {
       "id": 2,
@@ -17,7 +18,8 @@
       "description": "Ikan tongkol suwir pedas manis, disajikan dengan bihun goreng renyah.",
       "short": "Nasi + Tongkol Suwir + Bihun Goreng.",
       "price": 12000,
-      "image": "images/menu/tongkol.png"
+      "image": "images/menu/tongkol.png",
+      "category": "Rice Bowl"
     },
     {
       "id": 3,
@@ -25,7 +27,8 @@
       "description": "Telur goreng dengan sambal balado pedas segar, lengkap dengan oseng sayur.",
       "short": "Nasi + Telur Balado + Oseng Sayur.",
       "price": 12000,
-      "image": "images/menu/balado.png"
+      "image": "images/menu/balado.png",
+      "category": "Rice Bowl"
     },
     {
       "id": 4,
@@ -63,10 +66,10 @@
     
   ],
   "gallery": [
-    "images/gallery/1.png",
-    "images/gallery/2.png",
-    "images/gallery/3.png",
-    "images/gallery/4.png"
+    "public/images/gallery/1.png",
+    "public/images/gallery/2.png",
+    "public/images/gallery/3.png",
+    "public/images/gallery/4.png"
   ],
   "testimonials": [
   {"name":"Budi","comment":"Enak banget, porsinya pas dan rasanya seperti masakan rumah!"},
@@ -80,10 +83,8 @@
 ],
   "contact": {
   "phone": "+6282132517964",
-  "email": "heavenly@food.com",
   "instagram": "https://www.instagram.com/heavenly.fd/",
   "whatsappIcon": "images/icons/whatsapp.png", 
-  "emailIcon": "images/icons/email.png",
   "instagramIcon": "images/icons/instagram.png"
 }
 }

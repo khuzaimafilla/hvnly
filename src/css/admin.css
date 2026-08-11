@@ -1,0 +1,144 @@
+/* ==========================================================================
+   HEAVENLY FOOD (hvnly) — Admin Verifier Dashboard Styles
+   ========================================================================== */
+
+.admin-header {
+  height: 80px;
+  background: var(--surface);
+  border-bottom: 1px solid var(--border-light);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+}
+
+.admin-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--emerald-600);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.admin-badge {
+  background: var(--emerald-light);
+  color: var(--emerald-700);
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: var(--radius-pill);
+  text-transform: uppercase;
+}
+
+.admin-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+/* PASSKEY MODAL */
+.passkey-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: var(--bg-main);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.passkey-card {
+  background: var(--surface);
+  border-radius: var(--radius-lg);
+  padding: 36px;
+  max-width: 420px;
+  width: 100%;
+  box-shadow: var(--shadow-lg);
+  border: 1px solid var(--border-light);
+  text-align: center;
+}
+
+.passkey-card input {
+  width: 100%;
+  padding: 14px;
+  font-size: 1rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-light);
+  margin: 16px 0;
+  text-align: center;
+  letter-spacing: 0.1em;
+  outline: none;
+}
+
+.passkey-card input:focus {
+  border-color: var(--emerald-500);
+  box-shadow: 0 0 0 3px var(--emerald-glow);
+}
+
+/* VERIFIER CARD */
+.verifier-card {
+  background: var(--surface);
+  border-radius: var(--radius-lg);
+  padding: 32px;
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--border-light);
+  position: relative;
+}
+
+.status-badge-container {
+  text-align: center;
+  margin-bottom: 24px;
+  padding-bottom: 20px;
+  border-bottom: 1px dashed var(--border-light);
+}
+
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  padding: 10px 24px;
+  border-radius: var(--radius-pill);
+}
+
+.status-badge.paid {
+  background: var(--emerald-light);
+  color: var(--emerald-700);
+  border: 1px solid var(--border-emerald);
+}
+
+.status-badge.invalid {
+  background: var(--red-light);
+  color: var(--red-500);
+  border: 1px solid rgba(239, 68, 68, 0.2);
+}
+
+.order-detail-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--border-light);
+  font-size: 0.95rem;
+}
+
+.order-detail-label {
+  color: var(--text-muted);
+}
+
+.order-detail-value {
+  font-weight: 600;
+  color: var(--text-dark);
+  text-align: right;
+}
+
+.gmaps-link-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--emerald-600);
+  font-weight: 700;
+  text-decoration: underline;
+}
