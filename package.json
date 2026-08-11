@@ -1,11 +1,8 @@
 {
-  "name": "heavenlyai",
+  "name": "hvnly",
   "version": "1.0.0",
   "type": "module",
   "dependencies": {
-    "@google/generative-ai": "^0.12.0"
-  },
-  "scripts": {
-    "dev": "node index.js"
+    "midtrans-client": "^1.3.1"
   }
 }
