@@ -9,7 +9,7 @@
       "description": "Ayam bakar khas dengan bumbu manis-gurih, empuk dan juicy.",
       "short": "Nasi + Ayam Saus Teriyaki + Telur.",
       "price": 12000,
-      "image": "images/menu/teriyaki.png",
+      "image": "public/images/menu/teriyaki.png",
       "category": "Rice Bowl"
     },
     {
@@ -18,7 +18,7 @@
       "description": "Ikan tongkol suwir pedas manis, disajikan dengan bihun goreng renyah.",
       "short": "Nasi + Tongkol Suwir + Bihun Goreng.",
       "price": 12000,
-      "image": "images/menu/tongkol.png",
+      "image": "public/images/menu/tongkol.png",
       "category": "Rice Bowl"
     },
     {
@@ -27,32 +27,35 @@
       "description": "Telur goreng dengan sambal balado pedas segar, lengkap dengan oseng sayur.",
       "short": "Nasi + Telur Balado + Oseng Sayur.",
       "price": 12000,
-      "image": "images/menu/balado.png",
+      "image": "public/images/menu/balado.png",
       "category": "Rice Bowl"
     },
     {
       "id": 4,
       "name": "Salad Buah - Kecil",
-      "description": "Ayam geprek crispy dengan sambal bawang pedas, disajikan hangat.",
+      "description": "Salad buah segar thinwall 250ml dressing keju melimpah.",
       "short": "Salad Thinwall 250ml.",
       "price": 15000,
-      "image": "images/menu/salad.png"
+      "image": "public/images/menu/salad.png",
+      "category": "Salad Buah"
     },
     {
       "id": 5,
       "name": "Salad Buah - Besar",
-      "description": "Ikan bakar bumbu kecap manis, empuk dan beraroma asap.",
-      "short": "Salad Thinwall 400ml",
+      "description": "Salad buah segar thinwall 400ml dressing keju melimpah.",
+      "short": "Salad Thinwall 400ml.",
       "price": 23000,
-      "image": "images/menu/salad.png"
+      "image": "public/images/menu/salad.png",
+      "category": "Salad Buah"
     },
     {
       "id": 6,
       "name": "TERBATAS - Nasi Kikir",
-      "description": "Paket spesial hari Jumat! Pilih menu favorit dengan harga spesial Rp 10.000/pcs. Minimum 10 pcs untuk keberkahan lebih.",
+      "description": "Menu terbatas hari ini!",
       "short": "Nasi + Jamur Crispy + Sambal Matah.",
       "price": 8000,
-      "image": "images/menu/limited.png"
+      "image": "public/images/menu/limited.png",
+      "category": "Menu Spesial"
     },
     {
       "id": 7,
@@ -60,10 +63,10 @@
       "description": "Paket spesial hari Jumat! Pilih menu favorit dengan harga spesial Rp 10.000/pcs. Minimum 10 pcs untuk keberkahan lebih.",
       "short": "Paket spesial (min 10 pcs) - Pilih 1 menu nasi favorit.",
       "price": 10000,
-      "image": "images/menu/jumat.png",
-      "isSpecial": true
+      "image": "public/images/menu/jumat.png",
+      "isSpecial": true,
+      "category": "Menu Spesial"
     }
-    
   ],
   "gallery": [
     "public/images/gallery/1.png",
@@ -72,19 +75,15 @@
     "public/images/gallery/4.png"
   ],
   "testimonials": [
-  {"name":"Budi","comment":"Enak banget, porsinya pas dan rasanya seperti masakan rumah!"},
-  {"name":"Sari","comment":"Packing rapi dan delivery cepat. Recomended!"},
-  {"name":"Andi","comment":"Nasi Ayam Teriyaki-nya juara! Pedas manisnya pas, wajib coba."},
-  {"name":"Rina","comment":"Salad buahnya segar banget, cocok buat diet. Harga ramah kantong!"},
-  {"name":"Doni","comment":"Paket Jumat Berkah worth it, hemat dan enak. Besok pesen lagi deh."},
-  {"name":"Lia","comment":"Layanan ramah, makanan masih hangat pas sampe. Heavenly emang heavenly!"},
-  {"name":"Andi","comment":"Nasi Ayam Teriyaki-nya juara! Pedas manisnya pas, wajib coba."},
-  {"name":"Rina","comment":"Salad buahnya segar banget, cocok buat diet. Harga ramah kantong!"}
-],
+    {"name":"Budi","comment":"Enak banget, porsinya pas dan rasanya seperti masakan rumah!"},
+    {"name":"Sari","comment":"Packing rapi dan delivery cepat. Recomended!"},
+    {"name":"Andi","comment":"Nasi Ayam Teriyaki-nya juara! Pedas manisnya pas, wajib coba."},
+    {"name":"Rina","comment":"Salad buahnya segar banget, cocok buat diet. Harga ramah kantong!"},
+    {"name":"Doni","comment":"Paket Jumat Berkah worth it, hemat dan enak. Besok pesen lagi deh."},
+    {"name":"Lia","comment":"Layanan ramah, makanan masih hangat pas sampe. Heavenly emang heavenly!"}
+  ],
   "contact": {
-  "phone": "+6282132517964",
-  "instagram": "https://www.instagram.com/heavenly.fd/",
-  "whatsappIcon": "images/icons/whatsapp.png", 
-  "instagramIcon": "images/icons/instagram.png"
-}
+    "phone": "+6282132517964",
+    "instagram": "https://www.instagram.com/heavenly.fd/"
+  }
 }

@@ -365,6 +365,14 @@
       .join('');
   }
 
+  function fixImgPath(p) {
+    if (!p) return 'public/images/logo.png';
+    if (p.indexOf('images/') === 0 && p.indexOf('public/') !== 0) {
+      return 'public/' + p;
+    }
+    return p;
+  }
+
   function renderMenuGrid(items) {
     const grid = document.getElementById('menu-grid');
     if (!grid) return;
@@ -372,8 +380,9 @@
     grid.innerHTML = items
       .map(function (item) {
         const isSpecial = item.isSpecial;
+        const imgUrl = fixImgPath(item.image);
         return '<article class="menu-item ' + (isSpecial ? 'special' : '') + '">' +
-          '<div class="thumb"><img src="' + item.image + '" alt="' + item.name + '" loading="lazy"></div>' +
+          '<div class="thumb"><img src="' + imgUrl + '" alt="' + item.name + '" loading="lazy"></div>' +
           '<div class="meta">' +
             '<h3>' + item.name + '</h3>' +
             '<p>' + (item.short || item.description) + '</p>' +
@@ -437,7 +446,7 @@
     body.innerHTML = cart
       .map(function (item) {
         return '<div class="cart-item">' +
-          '<img src="' + item.image + '" alt="' + item.name + '">' +
+          '<img src="' + fixImgPath(item.image) + '" alt="' + item.name + '">' +
           '<div style="flex:1">' +
             '<strong>' + item.name + '</strong>' +
             '<div style="color:var(--text-muted);font-size:0.88rem">' + formatRupiah(item.price) + ' x ' + item.quantity + '</div>' +
@@ -469,7 +478,7 @@
 
     content.innerHTML =
       '<div class="modal-detail-hero">' +
-        '<img src="' + item.image + '" alt="' + item.name + '">' +
+        '<img src="' + fixImgPath(item.image) + '" alt="' + item.name + '">' +
         '<span class="modal-detail-badge">' + (item.category || 'Rice Bowl') + '</span>' +
       '</div>' +
       '<div class="modal-detail-content">' +
